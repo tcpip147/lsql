@@ -1,0 +1,5 @@
+lsql:
+  map-case-sensitive: uppercase
+  watch: false
+  paths:
+    - /

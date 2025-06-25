@@ -1,0 +1,6 @@
+@id department.selectById
+@description Selecting Department
+
+SELECT *
+  FROM DEPARTMENTS
+ WHERE ID = :ID

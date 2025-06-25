@@ -1,0 +1,28 @@
+{
+  "name": "lsql-language-server",
+  "version": "1.0.0",
+  "description": "LSQL Language Server",
+  "scripts": {
+    "build": "npx esbuild src/index.ts --bundle --platform=node --outfile=dist/server.js",
+    "copy:eclipse": "copyfiles -u 1 dist/server.js ../lsql-eclipse-plugin",
+    "copy": "npm run build && npm run copy:eclipse",
+    "test": "jest"
+  },
+  "keywords": [
+    "lsql-language-server", "lsql-eclipse-plugin"
+  ],
+  "author": "tcpip147",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "copyfiles": "^2.4.1",
+    "jest": "^29.7.0",
+    "prettier": "^3.5.3",
+    "ts-jest": "^29.3.4",
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "vscode-languageserver": "^9.0.1",
+    "vscode-languageserver-textdocument": "^1.0.12"
+  }
+}

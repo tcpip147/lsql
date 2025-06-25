@@ -1,0 +1,13 @@
+@id 
+@description Select User
+
+SELECT *
+  FROM USER
+
+@id 
+@description Select Department
+
+SELECT *
+  FROM DEPARTMENT
+
+ WHERE ID = '1'

@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: lsql.springboot.starter
+  datasource:
+    url: jdbc:h2:mem:test
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+
+lsql:
+  map-case-sensitive: lowercase
+  watch: true
+  paths:
+    - /

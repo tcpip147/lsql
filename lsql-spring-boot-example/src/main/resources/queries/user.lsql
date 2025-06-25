@@ -1,0 +1,6 @@
+@id user.selectInDepartment
+@description Selecting Users In Department
+
+SELECT *
+  FROM USERS
+ WHERE DEPARTMENT_ID = 2

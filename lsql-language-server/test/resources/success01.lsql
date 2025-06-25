@@ -1,0 +1,5 @@
+@id test.selectUser
+@description Select User
+
+SELECT *
+  FROM USER

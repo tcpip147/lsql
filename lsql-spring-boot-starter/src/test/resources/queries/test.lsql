@@ -1,0 +1,6 @@
+@id test.selectUser
+@description Selecting User
+
+SELECT *
+  FROM USERS
+ WHERE ID = :ID

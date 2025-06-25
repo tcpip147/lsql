@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+	<extension point="org.eclipse.core.contenttype.contentTypes">
+		<content-type
+			base-type="org.eclipse.core.runtime.text"
+			file-extensions="lsql"
+			id="com.tcpip147.lsql.eclipse.contentType"
+			name="LSQL File"
+			priority="normal">
+		</content-type>
+	</extension>
+	<extension point="org.eclipse.ui.editors">
+		<editor
+			id="com.tcpip147.lsql.eclipse.ui.LsqlMultiPageEditor"
+			class="com.tcpip147.lsql.eclipse.ui.LsqlMultiPageEditor"
+			contributorClass="com.tcpip147.lsql.eclipse.ui.LsqlMultiPageEditorActionBarContributor"
+			name="LSQL Editor"
+            icon="icons/file.png"
+			extensions="lsql">
+			<contentTypeBinding
+				contentTypeId="com.tcpip147.lsql.eclipse.contentType">
+			</contentTypeBinding>
+		</editor>
+	</extension>
+	<extension point="org.eclipse.ui.workbench.texteditor.hyperlinkDetectors">
+		<hyperlinkDetector
+			id="com.tcpip147.lsql.eclipse.ui.hyperlink.JavaHyperlinkDetector"
+			targetId="org.eclipse.jdt.ui.javaCode"
+			class="com.tcpip147.lsql.eclipse.ui.hyperlink.JavaHyperlinkDetector"
+			name="JavaHyperlinkDetector">
+		</hyperlinkDetector>
+	</extension>
+</plugin>
