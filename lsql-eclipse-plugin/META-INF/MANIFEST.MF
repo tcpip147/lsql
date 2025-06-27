@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Lsql eclipse plugin
 Bundle-SymbolicName: com.tcpip147.lsql.eclipse.ui;singleton:=true
-Bundle-Version: 1.0.0
+Bundle-Version: 1.0.1
 Bundle-Vendor: com.tcpip147
 Require-Bundle: org.eclipse.jface.text,
  org.eclipse.core.resources,
